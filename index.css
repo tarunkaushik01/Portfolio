@@ -1,0 +1,530 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Times New Roman';
+    box-sizing: border-box;
+}
+
+
+                                    /* NAVBAR */
+
+
+#navbar{
+    width: 100%;
+}
+#navbar ul{
+    display: flex;
+    padding: 10px;   
+}
+#navbar ul li{
+    list-style-type: none;
+}
+#navbar ul  li a{
+    margin-left: 10px;  
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+                                    /* INTRODUCTION */
+
+
+.Intro
+{
+    margin-top: 2px;
+    height: 500px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+.first 
+{
+    height: 400px;
+    width: 30%;
+    background-image: url(images/hi.png);
+}
+.second{
+    height:400px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#header
+{
+    font-size: 40px;
+    font: weight 800px;
+}
+.box p{
+    font-size: 20px;
+}
+#span
+{
+    font-size: 30px;
+}
+#h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+                                    /* ABOUT */
+
+.about
+{
+    text-align: center;
+    font-size: 50px;
+    background-color: #1a1b1c;
+    color: whitesmoke;
+}
+
+
+
+                                    /* SKILLS */
+
+
+.skills
+{   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 450px;
+    background-color: #1a1b1c;
+    color: whitesmoke;
+}
+.image1
+{
+    height:87%;
+    width: 30%;
+    background-image: url(images/working.png);
+    background-size: cover;
+    background-position: center;
+}
+.content
+{
+    height: 87%;
+    width: 60%;
+}
+
+#SEE{
+    font-size: 25px;
+    margin-top: 25px;
+    display: flex;
+}
+#SEE li{
+    list-style-type: none;
+    cursor: pointer;
+}
+#Education,#Experience{
+    margin-left: 20px;
+}
+.selected
+{
+    height: auto;
+}
+.selected ul{
+    padding: 20px;
+}
+.selected ul li{
+    list-style-type: none;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.selected p{
+    padding: 20px;
+    list-style-type: none;
+    font-size: 18px;
+}
+#education ,#experience
+{
+    display: none;
+}
+
+.tab {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.tab::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: white;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.tab:hover::after{
+    visibility: visible;
+    width: 50%;
+    color: white;
+}
+
+
+
+                                /* PROJECTS */
+
+
+.projects{
+    /* margin-top: 100px; */
+    height: 800px;
+}
+#projects
+{   
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 50px;
+    font-style: bold;
+    text-align: center;
+}
+.project1
+{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+#project1{
+    height: 300px;
+    width: 350px;
+}
+.project2
+{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#project2{
+    height: 300px;
+    width: 350px;
+}
+.imagee
+{
+    background-image: url('images/Imagefinder.jpeg');
+    background-size: cover;
+}
+.Weather
+{
+    background-image: url('images/weather.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Food
+{
+    background-image: url('images/food.jpeg');
+    background-size:cover ;
+}
+.BMI
+{
+    background-image: url('images/BMI.jpeg');
+    background-size: contain;
+}
+.guess
+{
+    background-image: url('images/GuessGame.jpeg');
+    background-size: contain;
+}
+.text
+{
+    background-image: url('images/Texttospeec.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.layerd{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.4s;
+
+}
+.layerd a{
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    line-height: 60px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+.Weather:hover .layerd{
+    height: 100%;
+}
+.imagee:hover .layerd{
+    height: 100%;
+}
+.Food:hover .layerd{
+    height: 100%;
+}
+.BMI:hover .layerd{
+    height: 100%;
+}
+.guess:hover .layerd{
+    height: 100%;
+}
+.text:hover .layerd{
+    height: 100%;
+}
+
+
+                            /* CONTACTS */
+
+
+.contact p
+{
+    height: 400px;    
+}
+.contactME{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight:bold ;
+}
+.button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10px;
+}
+.button a button{
+    width: 100px;
+    height: 30px;
+}
+.button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.conatach
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conatach ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.conatach ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.conatach li a{
+    font-size: 20px;
+}
+#link
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+                                    /* FOOTER */
+
+
+.footer
+{
+    height: auto;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: aliceblue;
+    background-color: #1a1b1c;
+}
+
+                                    /* WARNING */
+
+.warning{
+    display: none;
+}
+@media (min-width : 350px) and (max-width :670px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .first{
+        display: none;
+    }
+
+    /* INTRO */
+    .Intro{
+        /* margin-top: -50px; */
+    }
+    #header
+    {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    #span
+    {
+        font-size: 23px;
+    }
+    .p2{
+        font-size: 23px;
+    }
+
+    /* ABOUT */
+    .about p{
+        font-size: 32px;
+    }
+
+    /* skills */
+
+    #skillstext{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* projects */
+    .project1{
+        /* margin-top: -20px; */
+        height: auto;
+    }
+    #projects{
+        font-size: 32px;
+    }
+    .project1,.project2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
+    #project1,#project2
+    {
+        margin-top: 30px;
+    }
+    .contact{
+        margin-top: 1230px;
+    }
+    .footer{
+        font-size: 25px;
+    }
+
+}  
+
+@media (min-width: 350px) and (max-width:450px){
+    .image1{
+        display: none;
+    }
+    #tochange a{
+        font-size: 15px;
+    }
+    .warning{
+        display: block;
+    }
+}
+
+@media (min-width:300px) and (max-width:349px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .first{
+        display: none;
+    }
+
+    /* INTRO */
+    #header
+    {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    #span
+    {
+        font-size: 23px;
+    }
+    .p2{
+        font-size: 23px;
+    }
+
+    /* ABOUT */
+    .about p{
+        font-size: 32px;
+    }
+
+    /* skills */
+    .image1{
+        display: none;
+    }
+    #skillstext{
+        display: none;
+    }
+    .content{
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* projects */
+    .project1{
+        /* margin-top: -20px; */
+        height: auto;
+    }
+    #projects{
+        font-size: 32px;
+    }
+    .project1,.project2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
+    #project1,#project2
+    {
+        margin-top: 30px;
+    }
+    
+    .contact{
+        margin-top: 1230px;
+    }
+    .footer{
+        font-size: 25px;
+    }
+    #tochange a{
+        font-size: 15px;
+    }
+}
+
+
